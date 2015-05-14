@@ -1,7 +1,9 @@
 # gekoq
 A thin wrapper for pushing to Geckoboard's custom widgets using Node.js
 
-*gekoq comes from the [Malay word for gecko](etymonline.com/index.php?term=gecko), said to be imitative of its sound.*
+*gekoq comes from the [Malay word for gecko](http://etymonline.com/index.php?term=gecko), said to be imitative of its sound.*
+
+See ```widget.js``` in the GitHub repo for a simple example.
 
 ### Usage & Methods
 
