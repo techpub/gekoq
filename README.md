@@ -23,7 +23,7 @@ var widget = new gekoq.Widget('141830-2518ecbe-f81a-4b11-bc77-0bb20bfee019');
 
 #### Set the widget's payload
 
-This widget's payload is set by defining ```widget.payload```. Alternatively the widget's payload could be set with ```require()``` or ```fs.readFile()```. Here is an example of a Geck-o-Meter
+This widget's payload is set by defining ```widget.payload```. Alternatively the widget's payload could be stored in a separate file and set with ```require()``` or ```fs.readFile()```. Here is an example of a Geck-o-Meter
 
 ```
 widget.payload = {
