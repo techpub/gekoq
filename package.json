@@ -1,6 +1,6 @@
 {
   "name": "gekoq",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Thin wrapper for pushing to Geckoboard's custom widgets",
   "main": "index.js",
   "dependencies": {
