@@ -1,4 +1,4 @@
-var gekoq   = require('./gekoq/');
+var gekoq   = require('gekoq/');
 var api_key = require('./api_key');
 gekoq.api_key(api_key);
 

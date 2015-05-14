@@ -6,7 +6,7 @@ A thin wrapper for pushing to Geckoboard's custom widgets using Node.js
 ### Usage & Methods
 
 ```
-var gekoq = require('./gekoq');
+var gekoq = require('gekoq');
 ```
 
 #### Set the API Key
