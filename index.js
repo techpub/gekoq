@@ -2,9 +2,6 @@ var request = require('request');
 
 var gecko_path = 'https://push.geckoboard.com/v1/send/';
 
-var widgets = [];
-module.exports.widgets = widgets;
-
 function Widget (widget_id, payload, type) {
   this.push_url = gecko_path + widget_id;
   this.payload = payload || {};
