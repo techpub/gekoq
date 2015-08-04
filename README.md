@@ -42,6 +42,7 @@ var widget = {
 }
 
 gekoq.push(widget);
+```
 
 #### Use Promises to push an array of widgets
 
