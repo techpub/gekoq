@@ -13,7 +13,7 @@ module.exports = function push(key, widget) {
       form: JSON.stringify(payload)}, 
       function(err, res, body) {
         if(err) {
-          throw new Error(err);
+          throw err;
         }
         console.log(widget.id);
         console.log(body);
