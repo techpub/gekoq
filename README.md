@@ -10,19 +10,27 @@ $ npm install gekoq
 ```
 
 ```
-var gekoq = require('gekoq');
+const gekoq = require('gekoq');
 ```
 
 #### Set the API Key
-```
-var api_key = require('./api_key'); // API Key stored in e.g. api_key.json 
-gekoq.key(api_key); // Set the API Key
-```
 
-or
+Use the `gekoq.key()` method.
 
 ```
-gekoq.key('key');
+gekoq.key('a094dabc561c521f81782627f1c2by73');
+```
+
+A good strategy is to store keys as environment variables
+
+```
+$ export GECKOBOARD_API_KEY=a094dabc561c521f81782627f1c2by73
+```
+
+then
+
+```
+gekoq.key(process.env.GECKOBOARD_API_KEY);
 ```
 
 #### Methods
@@ -30,7 +38,7 @@ gekoq.key('key');
 `gekoq.push()` accepts an object with the required properties `id` and `data`:
 
 ```
-var widget = {
+let widget = {
   id: '147539-72d8b6cf-8766-4ead-bd1e-b671e8a5ab86',
   data: {
     item: [
@@ -47,7 +55,7 @@ gekoq.push(widget);
 #### Use Promises to push an array of widgets
 
 ```
-var dashboard = [
+let dashboard = [
   {
     id: '119097-1c74815e-8658-48a0-80f3-cdb79a07754c',
     data: { item: [ { value: 100 } ] }
@@ -58,7 +66,7 @@ var dashboard = [
   }
 ]
 
-Promise.all(dashboard.map(function (widget) { 
+Promise.all(dashboard.map(widget => { 
   gekoq.push(widget); 
 }));
 ```
